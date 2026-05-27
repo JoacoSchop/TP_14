@@ -16,6 +16,8 @@ public class Recolector : MonoBehaviour
             puntos++;
 
             textoPuntos.text = "Puntos: " + puntos;
+
+            Debug.Log ("se recolecto obejto con exito");
         }
     }
 }
