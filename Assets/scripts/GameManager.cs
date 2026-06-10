@@ -6,29 +6,44 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-public TextMeshProUGUI textoCronometro;
+    private float tiempo = 30f;
+    public bool corriendo = true;
+    public bool jugando = true;
+    private UIManager uiManager;
 
-    private float tiempo = 60f;
- public bool corriendo = true;
+    void Awake()
+    {
+        jugando = true;
+        uiManager = FindObjectOfType<UIManager>();
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
-      if (Input.GetKeyDown(KeyCode.R))
-    {
-        tiempo = 20f;
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(KeyCode.R) && jugando == false)
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (corriendo)
+        {
+            tiempo -= Time.deltaTime;
+
+            if (tiempo <= 0f)
+            {
+                tiempo = 0f;
+                pararT();
+                uiManager.MostrarDerrota();
+            }
+        }
+
+        uiManager.UpdateTimer(tiempo); 
     }
 
-    if (corriendo)
+    public void pararT()
     {
-        tiempo -= Time.deltaTime;
-    }
-
-    textoCronometro.text = tiempo.ToString("F2");
-}
-
-    public void pararT(){
         corriendo = false;
+        Time.timeScale = 0f;
     }
 }

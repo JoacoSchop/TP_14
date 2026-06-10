@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Recolector : MonoBehaviour
+public class InteractiveArea : MonoBehaviour
 {
     public int puntos = 0;
 
