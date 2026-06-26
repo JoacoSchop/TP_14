@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    private float tiempo = 30f;
+    private float tiempo = 45f;
     public bool corriendo = true;
     public bool jugando = true;
     private UIManager uiManager;
