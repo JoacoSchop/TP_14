@@ -1,18 +1,28 @@
 fileFormatVersion: 2
-guid: 1f8b1e5455328784ab1cc0e8e516b617
+guid: 37b1629e59a709b4c8e5102214a971b9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder.002
+    100004: Plancas
     400000: //RootNode
-    2100000: Gris
-    2100002: Blanco
-    2100004: Azul
-    2100006: Azul Oscuro
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
-  externalObjects: {}
+    400002: Cylinder.002
+    400004: Plancas
+    2100000: Rosa
+    2100002: Madera
+    2300000: Cylinder.002
+    2300002: Plancas
+    3300000: Cylinder.002
+    3300002: Plancas
+    4300000: Cylinder.002
+    4300002: Plancas
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Rough_Planks
+    second: {fileID: 2800000, guid: b74284cb638a58b44a60a88af21bcd74, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

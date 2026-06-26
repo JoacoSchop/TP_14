@@ -1,15 +1,24 @@
 fileFormatVersion: 2
-guid: 2525ac34d7c7c6b43be6a4caaf99962e
+guid: 43a6b263da9dae947b6b57dc013ff280
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: negro
+    2100002: azul
+    2100004: Blanco
+    2100006: net
+    2100008: azul oscuro
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: photo-plastic-texture-pattern
+    second: {fileID: 2800000, guid: 72ddd576cb7be17429a9d53b07ef70d0, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
